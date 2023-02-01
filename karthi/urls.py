@@ -21,6 +21,7 @@ urlpatterns = [
     path('login/',include('agrophile.urls')),
     path('about/',include('agrophile.urls')),
     path('prediction/',include('agrophile.urls')),
+    path('fertilizer/',include('agrophile.urls')),
     path('contact/',include('agrophile.urls')),
     path('info/',include('agrophile.urls')),
     path('admin/', admin.site.urls),
