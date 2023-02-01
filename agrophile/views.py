@@ -13,7 +13,7 @@ model = pickle.load(open('savedmodels/classifier.pkl','rb'))
 ferti = pickle.load(open('savedmodels/fertilizer.pkl','rb'))
 def home(request):
     return render(request,'home.html')
-"""def login(request):
+def login(request):
 
     if request.method == 'POST':
         username=request.POST['username']
@@ -36,7 +36,7 @@ def home(request):
             return redirect('login')
         return redirect('/')
     else:    
-        return render(request,'login.html')"""
+        return render(request,'login.html')
     
 def about(request):
     return render(request,'about.html')
