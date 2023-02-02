@@ -8,5 +8,7 @@ urlpatterns = [
     path('prediction/',views.prediction,name='prediction'),
     path('contact/',views.contact,name='contact'),
     path('crop_prediction/',views.crop_prediction,name='crop_prediction'),
+    path('fertilizer/',views.fertilizer,name='fertilizer'),
+    path('fertilizer_predict/',views.fertilizer_predict,name='fertilizer_predict'),
     path('info/',views.info,name='info')
 ]
