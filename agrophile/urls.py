@@ -1,0 +1,30 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('',views.home,name='home'),
+    path('login/',views.login,name='login'),
+    path('logout/',views.logout,name='logout'),
+    path('signup/',views.signup,name='signup'),
+    path('about/',views.about,name='about'),
+    path('prediction/',views.prediction,name='prediction'),
+    path('fertilizer/',views.fertilizer,name='fertilizer'),
+    path('fertilizer_predict/',views.fertilizer_predict,name='fertilizer_predict'),
+    path('contact/',views.contact,name='contact'),
+    path('crop_prediction/',views.crop_prediction,name='crop_prediction'),
+    path('chickpea/',views.chickpea,name='chickpea'),
+    path('kidneybeans/',views.kidneybeans,name='kidneybeans'),
+    path('mothbeans/',views.mothbeans,name='mothbeans'),
+    path('pigeonpeas/',views.pigeonpeas,name='pigeonpeas'),
+    path('grapes/',views.grapes,name='grapes'),
+    path('mango/',views.mango,name='mango'),
+    path('muskmelon/',views.muskmelon,name='muskmelon'),
+    path('pomegranate/',views.pomegranate,name='pomegranate'),
+    path('rice/',views.rice,name='rice'),
+    path('maize/',views.maize,name='maize'),
+    path('cotton/',views.cotton,name='cotton'),
+    path('jute/',views.jute,name='jute'),
+    path('blackgram/',views.blackgram,name='blackgram'),
+    path('lentil/',views.lentil,name='lentil'),
+    path('info/',views.info,name='info'),
+]
