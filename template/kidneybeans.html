@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <title>KIDNEYBEANS</title>
+</head>
+
+<body>
+    {% block content %}
+    <section style="background: antiquewhite;">
+        <div class="wrapper">
+            <div class="row1">
+                <div class="image-section">
+                    <img src="{% static 'images\kidneybeans.jfif' %}" alt="Kidneybeans"
+                        style="height:50%;margin-right:15px;">
+                </div>
+                <div class="content">
+                    <h1>KIDNEYBEANS</h1>
+                    <!-- <h2>Welcome To agrophile</h2> -->
+                    <p style="font-style: 'lobster',cursive;">
+                    <h3>How to grow kidneybeans</h3>
+                    <ul>
+                        <li>Kidney beans do best in USDA growing zones 4 and warmer with temps between 65-80 F. (18-26
+                            C.) for most of their growing season. They don't do well transplanted, so it's best to
+                            direct sow them in the spring after the last frost date for your area. </li>
+                        <li>Don't plant them too early or the seeds will rot. You may want to lay down some black
+                            plastic to warm the soil. Plant them in full sun exposure in well-draining soil. Beans don't
+                            like to get their “feet” wet. </li>
+                        <li>When growing kidney beans, space the seed 4 inches (10 cm.) apart for vining beans and 8
+                            inches (20.5 cm.) apart for bush varieties, one inch to 1 ½ inch (2.5 to 4 cm.) below the
+                            soil surface. The growing kidney bean seedlings should emerge between 10-14 days from
+                            planting. </li>
+                        <li>Keep in mind that the vining types will need some sort of support or trellis to grow on.
+                        </li>
+                        <li>Beans shouldn't be grown in the same area more than once every four years.</li>
+                    </ul>
+                    <br>
+
+                    <h3>Care </h3>
+                    <ul>
+                        <li>The care of kidney beans is minimal. Beans produce their own nitrogen, so it usually isn’t
+                            necessary to fertilize the plants. If you feel compelled, however, be sure not to use a food
+                            that is high in nitrogen. This will only stimulate lush foliage, not bean production.</li>
+                        <li>Keep the area around the beans free from weeds and keep them lightly moist, not wet. A good
+                            layer of mulch will aid in retarding weeds and maintaining moist soil conditions.</li>
+                    </ul>
+                    <br>
+                    <h3>Harvesting
+                    </h3>
+                    <ul>
+                        <li>Within 100-140 days, depending upon the variety and your region, the harvesting of kidney
+                            beans should be near. As the pods start to dry out and yellow, quit watering the plant. If
+                            it is not too humid and you have left plenty of space between plants, the beans may well dry
+                            on the plant. </li>
+                        <li>They will be hard as rocks and desiccated. Otherwise, when the pods are the color of straw
+                            and it’s time to harvest, remove the entire plant from the soil and hang it upside down
+                            inside in a dry place to allow the beans to continue to dry out. </li>
+                        <li>Once the beans have completely cured, you can keep them in a tightly sealed container for
+                            about a year.</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+</body>
+
+</html>

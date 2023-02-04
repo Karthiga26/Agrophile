@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <title>MOTHBEANS</title>
+</head>
+
+<body>
+    {% block content %}
+    <section style="background: antiquewhite;">
+        <div class="wrapper">
+            <div class="row1">
+                <div class="image-section">
+                    <img src="{% static 'images\mothbeans.jpg' %}" alt="mothbeans"
+                        style="height:50%;margin-right:15px;">
+                </div>
+                <div class="content">
+                    <h1>MOTHBEANS</h1>
+                    <!-- <h2>Welcome To agrophile</h2> -->
+                    <p style="font-style: 'lobster',cursive;">
+                    <h3>Climate</h3>
+                    <ul>
+                        <li>The ideal temperature for growing Moth bean is between 24°c-32°c. </li>
+                        <li>It can also permit up to 45°c during the day.</li>
+                        <li>For growing Moth Bean , 500-750mm of rainfall is required and it can also do well with 300mm
+                            of annual rainfall.</li>
+                    </ul>
+                    <br>
+
+                    <h3>Watering </h3>
+                    <ul>
+                        <li>In India, It requires very less irrigation and it is one of the most drought resistant pulse
+                            crops.</li>
+                        <li>These plants are rugged and drought resistant.</li>
+                        <li>They will do well if they are irrigated timely and appropriately.</li>
+                        <li>During the flowering stage, it requires water and developing stages of pod will be very good
+                            for the plants.</li>
+
+                    </ul>
+                    <br>
+                    <h3>Harvesting</h3>
+                    <ul>
+                        <li>From planting to harvesting, Moth bean plants take around 75-90 days </li>
+                        <li>For threshing, before harvesting the whole plant should be matured and dry.</li>
+                        <li>It is difficult to harvest Moth bean and it is the main drawback of this crop.</li>
+                        <li>Plants should be cut with a sickle, as Mowers cannot be used because of the shape and
+                            density of the branches.</li>
+                        <li>After being dried for maximum 1 week it is threshed and winnowed.</li>
+                        <li>This crop suffers from a loss of harvest, transport and storage.</li>
+                        <li>Because of these factors, about 8-20% or maybe more yield losses are expected.</li>
+                        <li>After the leaves gets dry and pods turn yellow, crop can be uprooted.</li>
+                        <li>For 3-5 days crops are stored in bundles and kept for sun drying.</li>
+                        <li>Then the crops are threshed by the use of bullocks, hand sticks or threshers.</li>
+                        <li>After threshing, the seeds again kept for drying in the open sky so that the moisture
+                            content be lowered to about 8-10%.</li>
+                        <li>By using cloth or gummy bags seeds are stored in airtight earthen pots.</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+</body>
+
+</html>

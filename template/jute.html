@@ -1,0 +1,61 @@
+{% extends 'base.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <title>JUTE</title>
+</head>
+<body>
+    {% block content %}
+<section style=  "background: antiquewhite;">
+    <div class="wrapper">
+        <div class="row1">
+            <div class="image-section">
+                <img src="{% static 'images\jute.jfif' %}" alt="Jute"
+                        style="height:50%;margin-right:15px;">
+            </div>
+            <div class="content">
+                <h1>JUTE</h1>
+                <!-- <h2>Welcome To agrophile</h2> -->
+                <p style="font-style: 'lobster',cursive;">
+                <h3>Climate:</h3>
+                <ul>
+                    <li>Jute requires a hot and humid climate, a temperature fluctuation between 24o C and 37o C. However, the optimum is around 34 o C.</li>
+                    <li>There should not be constant rain or waterlogged conditions which are harmful to jute cultivation. In the seedling stage, water-logging is not advised.</li>
+                    <li>Alternate sunshine and rainy days are most helpful to jute growth.</li>
+
+                    </ul>
+
+                    <br>
+
+<h3>Watering </h3>
+<ul>
+    <li>The best soil recommended for the cultivation of jute is new grey alluvial soil of good depth, receiving silt from the annual floods.</li>
+    <li>Jute is largely grown in sandy loams and clay loams. </li>
+    <li>Varying clays are unsuitable for jute cultivation.</li>
+    <li>You can note that the optimum pH range is around 6.4 for the cultivation of jute.</li>
+    <li>In other words, jute requires a clean, clod-free field with a fine tilth.</li>
+    <li>The land is ploughed, cross ploughed, & planked many times. </li>
+    <li>All weeds must be thoroughly removed.</li>
+    
+    </ul>
+<br>
+<h3>Harvest and Storing </h3>
+<ul>
+    <li>The jute plants are cut to the ground and tied into bundles.</li>
+    <li>After that, sheaves of jute stocks are immersed in floodwater or ponds or stagnant water for about 2 - 3 weeks for retting. The high temperature of the water is advised which quickens the process of retting.</li>
+    <li>Once retting is done, the bark is peeled from the plant & fibre is removed.</li>
+    <li>Then comes stripping, rinsing, washing and cleaning. After that, the fibre is dried in the sun and pressed into bales. </li>
+    <li>Remember all this process has to be done by human hand. </li>
+    <li>Thus, the availability of more labour at cheap rates is very important. But the interesting part is there is no labour shortage as jute is cultivated in areas of high population density.</li>
+
+</ul>
+<br>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign Up | By Code Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #344a7206;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .signup-box {
+      width: 360px;
+      height: 620px;
+      margin: auto;
+      background-color: rgba(208, 223, 223, 0.773);
+      border-radius: 3px;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 15px;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    form {
+      width: 300px;
+      margin-left: 20px;
+    }
+
+    form label {
+      display: flex;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 7px;
+      border: none;
+      border: 1px solid gray;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    input[type="button"] {
+      width: 320px;
+      height: 35px;
+      margin-top: 20px;
+      border: none;
+      background-color: #101110;
+      color: white;
+      font-size: 18px;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 15px;
+    }
+
+    .para-2 {
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      margin-top: -10px;
+    }
+
+    .para-2 a {
+      color: #101010;
+    }
+  </style>
+</head>
+
+<body background="{% static 'images/bg.jpg' %}" style="background-size: 100%;">
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <h4>It just takes a minute</h4>
+    <form method="post" action="signup/">
+      {% csrf_token %}
+      <label>firstname</label>
+      <input type="text" name="first_name" placeholder="" />
+      <label>lastname</label>
+      <input type="text" name="last_name" placeholder="" />
+      <label>username</label>
+      <input type="text" name="username" placeholder="" />
+      <label>email</label>
+      <input type="email" name="email" placeholder="" />
+      <label>password</label>
+      <input type="password" name="password1" placeholder="" />
+      <label>confirm password</label>
+      <input type="password" name="password2" placeholder="" /><br><br>
+      <input style="background-color:rgb(10, 10, 10);color:aliceblue" type="submit" />
+    </form>
+  </div>
+</body>
+</html>

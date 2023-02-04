@@ -1,0 +1,44 @@
+{% extends 'base.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <title>MAIZE</title>
+</head>
+<body>
+    {% block content %}
+<section style=  "background: antiquewhite;">
+    <div class="wrapper">
+        <div class="row1">
+            <div class="image-section">
+                <img src="{% static 'images\maize.jfif' %}" alt="Maize"
+                        style="height:50%;margin-right:15px;">
+            </div>
+            <div class="content">
+                <h1>MAIZE</h1>
+                <!-- <h2>Welcome To agrophile</h2> -->
+                <p style="font-style: 'lobster',cursive;">
+                <h3>Time of planting:</h3>
+                Generally, the ideal sowing time is June 20 to end of July. However, this will be dependent on the time of onset of monsoon. In fields where water stagnation may occur, early sowing is desirables so that plant reaches a firm stand to avoid lodging due to water logging.
+                    <br>
+
+<h3>Land preparation: </h3>
+Maize needs well pulverized, fine and smooth field for seed emergence and root growth. Hence, deep tillage operation using mould board plough followed by two harrowing and one planking is needed for good field preparation and early season weed management. Maize can also be successfully produced under zero-till conditions using happy seeder or zero till multi-crop planter.
+
+<br>
+<h3>Water management: </h3>
+Water requirement of maize is 500–800 mm per growing season. Under kharif season, partially water requirement is met by rainfall. Hence, 1-4 irrigations are required, which may vary depending on frequency of rainfall. Adequate moisture at germination, pre-tasseling, silking and grain-filling stages should be ensured through irrigation, if rainfall is not there. If available, the sprinkler irrigation up to knee length stage is very good for maize crop. In ridge-sown crop, irrigation should be given in furrow up to 2/3 of height of the ridge.
+
+<br>
+<h3>Harvesting and post harvest handling:  </h3>
+Maize can be harvested when the husk has dried and turned brown. Apart from hand-picking, combined harvester may also be used for quick harvesting. After manual harvesting, depending upon the cultivated area, manual shellers or maize dehusker-cum-sheller or maize thresher may be used for separating grains from cobs. The optimum moisture in grain for long-term storage should be below 14%. Portable Maize Dryer can also be used for reducing the moisture content of the cobs. Sun drying of the cobs and seeds is required in absence of other drying options prior to marketing as moisture above optimum level reduces market prices and increases chance of aflatoxin contamination.
+<br>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+</body>
+
+</html>
